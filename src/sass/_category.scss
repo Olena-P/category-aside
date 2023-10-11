@@ -1,0 +1,46 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+.category-box {
+  .category-title {
+    color: #4f2ee8;
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 133.333% */
+    letter-spacing: -0.36px;
+    text-transform: uppercase;
+  }
+  .category-list {
+    display: flex;
+    flex-direction: column;
+    width: 356px;
+    height: 300px;
+    overflow-y: auto;
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
+    &::-webkit-scrollbar-thumb {
+      width: 8px;
+      border-radius: 12px;
+      background: #e0e0e0;
+    }
+    &::-webkit-scrollbar {
+      width: 8px;
+    }
+    button {
+      color: rgba(17, 17, 17, 0.6);
+      font-family: DM Sans;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 133.333% */
+      letter-spacing: -0.36px;
+      text-align: start;
+      border: none;
+      background-color: none;
+      background-color: white;
+      margin-bottom: 32px;
+    }
+  }
+}
